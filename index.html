@@ -230,6 +230,27 @@ span.sm.cur{background:var(--coral);box-shadow:0 0 0 2px var(--bg)}
 .steps .a{font-size:1.2rem;line-height:1.6}
 
 .boxlink .bl-main,.cmpbox .bl-main{font-size:1.6rem;line-height:1.3}
+
+.boxlink .bl-sub{display:block;margin-top:.55em;font-size:1.2rem;font-weight:800;line-height:1.4}
+.toc-list a .nb{float:left;min-width:1.45em;height:1.45em;line-height:1.45em;padding:0 .4em;margin-right:.5em;box-sizing:border-box;border-radius:99px;background:#fff2a0;color:#13244a;font-size:.78rem;font-weight:900;text-align:center;box-shadow:0 0 0 2px var(--bg)}
+.nlist{margin:4px 0 6px;padding-bottom:8px;border-bottom:2px solid var(--bg)}
+.nl-btn{width:100%;display:flex;align-items:center;gap:8px;font:inherit;font-weight:800;font-size:.95rem;color:#fff;background:transparent;border:0;padding:8px 12px;border-radius:10px;cursor:pointer;text-align:right}
+.nl-btn:hover{background:rgba(255,255,255,.08)}
+.nl-btn:focus-visible,.nl-chips button:focus-visible,.nl-nav button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.nl-sw{flex:none;width:14px;height:14px;border-radius:3px;background:#fff2a0}
+.nl-n{min-width:1.45em;height:1.45em;line-height:1.45em;padding:0 .4em;box-sizing:border-box;border-radius:99px;background:#fff2a0;color:#13244a;font-size:.78rem;text-align:center}
+.nl-car{margin-inline-start:auto;width:7px;height:7px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);margin-top:-3px}
+.nl-btn[aria-expanded="true"] .nl-car{transform:rotate(-135deg);margin-top:3px}
+#nl-body[hidden]{display:none}
+.nl-chips{display:flex;flex-wrap:wrap;gap:6px;padding:8px 10px}
+.nl-chips button{font:inherit;font-weight:800;font-size:.85rem;padding:3px 11px;border-radius:99px;border:0;background:#fff2a0;color:#13244a;cursor:pointer}
+.nl-chips button:hover{background:#fff;}
+.nl-nav{display:flex;gap:6px;padding:0 10px}
+.nl-nav button{flex:1;font:inherit;font-size:.82rem;font-weight:800;border:2px solid #fff2a0;background:transparent;color:#fff2a0;border-radius:99px;padding:5px 8px;cursor:pointer}
+.nl-nav button:hover{background:#fff2a0;color:#13244a}
+mark.hl.flash{animation:hlflash 1.8s ease-out}
+@keyframes hlflash{0%,55%{box-shadow:0 0 0 5px var(--coral)}100%{box-shadow:0 0 0 0 rgba(239,125,82,0)}}
+@media(prefers-reduced-motion:reduce){mark.hl.flash{animation:none;box-shadow:0 0 0 4px var(--coral)}}
 </style>
 </head>
 <body>
@@ -270,11 +291,11 @@ span.sm.cur{background:var(--coral);box-shadow:0 0 0 2px var(--bg)}
 <div class="grid">
 <details><summary><span class="ico">📈</span><span class="st">שכר וקידום<small>לחצו כדי לגלות</small></span></summary>
 <ul class="dots">
-<li>העלאות שכר בהסכם הקיבוצי החדש. תוקף ההסכם הנוכחי עד הרבעון הראשון של שנת 2028.</li>
+<li>העלאות שכר משמעותיות בהסכם הקיבוצי החדש, כולל מענקי חתימה מוגדלים. תוקף ההסכם הנוכחי עד הרבעון הראשון של שנת 2028.</li>
 <li>התאמה של שווי המתנות בחגים ובהחזרי תרבות ופנאי ליוקר המחייה ומדדי המחירים של היום. הם נקבעו בהסכם הקיבוצי הראשון משנת 2018 ולא עודכנו מאז.</li>
 <li>הרחבת רמות המשרה והוספת אפשרויות להעלאות בשכר.</li>
 <li>כל מכרז יפורסם קודם לפחות לשבוע כמכרז פנימי כדי לתת עדיפות לעובדי החברה ולאפשר קידום העובדים הקיימים.</li>
-<li>מענקי התמדה ושימור.</li>
+<li>מענקי התמדה ושימור, משכורות 13, העקרון- חלוקת בונוסים לעמידה באבני דרך לכל השותפים לתהליך ולא רק לדרג הבכיר.</li>
 </ul></details>
 <details><summary><span class="ico">🏠</span><span class="st">איזון בית-עבודה<small>לחצו כדי לגלות</small></span></summary>
 <ul class="dots">
@@ -325,7 +346,7 @@ span.sm.cur{background:var(--coral);box-shadow:0 0 0 2px var(--bg)}
 
 <section id="contract">
 <h2>ההסכם הקיבוצי המלא- נקודות לשינוי</h2>
-<a class="box boxlink" href="#agreement"><span class="bl-main">להסכם הקיבוצי המלא לחצו כאן</span><span class="bl-small"><span>איחדתי את ההסכם המקורי משנת 2018 עם השינויים והעדכונים של התוספת הראשונה משנת 2024. סימנתי הערות לשינוי ותיקון, מוזמנים לעבור על ההסכם ואשמח לשמוע את דעתכם.</span><span>בכל סתירה בין ההסכם לבין המסמכים הרשמיים, הנוסח במסמך הרשמי הוא הקובע.</span></span></a>
+<a class="box boxlink" href="#agreement"><span class="bl-main">להסכם הקיבוצי המלא לחצו כאן</span><span class="bl-sub">לראשונה בנת"ע- ההסכם הקיבוצי במלואו נגיש לעובדים בצורה נוחה ובממשק אינטואטיבי!</span><span class="bl-small"><span>איחדתי את ההסכם המקורי משנת 2018 עם השינויים והעדכונים של התוספת הראשונה משנת 2024. סימנתי הערות לשינוי ותיקון, מוזמנים לעבור על ההסכם ואשמח לשמוע את דעתכם.</span><span>בכל סתירה בין ההסכם לבין המסמכים הרשמיים, הנוסח במסמך הרשמי הוא הקובע.</span></span></a>
 
 <div class="box cmpbox"><span class="bl-main">השוואת התנאים עם חברות התשתית האחרות</span><span class="bl-small">כחלק מהכנת המצע, חקרתי את ההסכמים הקיבוציים והתנאים בחברות הממשלתיות המקבילות העוסקות בתשתיות תחבורה- נתיבי איילון, נתיבי ישראל, חוצה ישראל ורכבת ישראל. להלן חלק מהממצאים:</span>
 <div class="cmpw"><table class="cmp"><thead><tr><th scope="col"><span class="vh">נושא</span></th><th scope="col" class="me"><span class="lg"><img src="images/logos/nta.png" alt="נת"ע"></span></th><th scope="col"><span class="lg"><img src="images/logos/hutza.png" alt="חוצה ישראל"></span></th><th scope="col"><span class="lg"><img src="images/logos/ayalon.png" alt="נתיבי איילון"></span></th><th scope="col"><span class="lg"><img src="images/logos/netivei.png" alt="נתיבי ישראל"></span></th><th scope="col"><span class="lg"><img src="images/logos/rail.png" alt="רכבת ישראל"></span></th></tr></thead><tbody>
@@ -396,7 +417,7 @@ span.sm.cur{background:var(--coral);box-shadow:0 0 0 2px var(--bg)}
 <header class="agr-head">
 <a class="back" href="#contract">חזרה לעמוד הראשי</a>
 <h2 class="agr-title">ההסכם הקיבוצי המלא</h2>
-<p class="agr-sub">בצד ימין תוכן העניינים: לחצו על חלק כדי לקפוץ אליו, והוא יסומן בזמן הגלילה. קטעים שסימנתי <mark class="hl demo" data-note="כך נראית הערה: העבירו את העכבר מעל קטע מסומן, או הקישו עליו בנייד">בצהוב</mark> מכילים הערה: העבירו עליהם את העכבר, או הקישו עליהם בנייד.</p>
+<p class="agr-sub">בצד ימין תוכן העניינים: לחצו על חלק כדי לקפוץ אליו, והוא יסומן בזמן הגלילה. קטעים שסימנתי <mark class="hl demo" data-note="כך נראית הערה: העבירו את העכבר מעל קטע מסומן, או הקישו עליו בנייד">בצהוב</mark> מכילים הערה: העבירו עליהם את העכבר, או הקישו עליהם בנייד. בסרגל, סעיפים שיש בהם הערה מסומנים בעיגול צהוב בהיר, ובראשו רשימה מתקפלת שמאפשרת לקפוץ ביניהם.</p>
 </header>
 <div class="agr-bar">
 <button type="button" id="toc-btn" aria-expanded="false" aria-controls="toc">☰ תוכן עניינים</button>
@@ -410,6 +431,7 @@ span.sm.cur{background:var(--coral);box-shadow:0 0 0 2px var(--bg)}
 <div class="toc-here"><span class="k">אתם נמצאים ב:</span><span id="here" aria-live="polite">פתיחה</span></div>
 </div>
 <div class="toc-list" role="navigation" aria-label="תוכן העניינים של ההסכם">
+<div class="nlist"><button type="button" class="nl-btn" id="nl-btn" aria-expanded="false" aria-controls="nl-body"><span class="nl-sw" aria-hidden="true"></span><span>סעיפים עם הערות</span><b class="nl-n" id="nl-n"></b><span class="nl-car" aria-hidden="true"></span></button><div id="nl-body" hidden><div class="nl-chips" id="nl-chips"></div><div class="nl-nav"><button type="button" id="nl-prev">הערה קודמת</button><button type="button" id="nl-next">הערה הבאה</button></div></div></div>
 <a class="t1 top" href="#agreement-top" data-t="agreement-top">פתיחה והצדדים</a>
 <div class="tcap">חלקי ההסכם</div>
 <div class="tg"><a class="t1" href="#agreement-part1" data-t="agreement-part1">חלק א' – מבוא</a><div class="tsub"><a class="t2" href="#agreement-h2" data-t="agreement-h2">א. מבוא</a><a class="t2" href="#agreement-h3" data-t="agreement-h3">ב. שמירת זכויות</a><a class="t2" href="#agreement-h4" data-t="agreement-h4">ג. פרשנות והגדרות</a><a class="t2" href="#agreement-h5" data-t="agreement-h5">ד. תחולת ההסכם</a><a class="t2" href="#agreement-h6" data-t="agreement-h6">ה. תקופת ההסכם ותוקפו</a><a class="t2" href="#agreement-h7" data-t="agreement-h7">ו. כללי</a><a class="t2" href="#agreement-h8" data-t="agreement-h8">ז. שקט תעשייתי ומיצוי תביעות</a></div></div>
@@ -1300,6 +1322,64 @@ function spy(){
 }
 addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(spy);}},{passive:true});
 addEventListener('resize',()=>requestAnimationFrame(spy));
+
+/* ---- סימון סעיפים עם הערות בתוכן העניינים + רשימה מתקפלת ---- */
+(function(){
+  const first=new Map();
+  document.querySelectorAll('#doc mark.hl').forEach(m=>{const n=+m.dataset.n;if(!first.has(n))first.set(n,m);});
+  const ordered=[];const seenSec=new Set();
+  [...first.entries()].sort((a,b)=>a[1].compareDocumentPosition(b[1])&Node.DOCUMENT_POSITION_FOLLOWING?-1:1).forEach(e=>{const s=NOTES[e[0]].sec;if(!seenSec.has(s)){seenSec.add(s);ordered.push(e);}});
+  function targetOf(el){
+    let lo=0,hi=targets.length-1,ans=-1;
+    while(lo<=hi){const mid=(lo+hi)>>1;
+      if(targets[mid].compareDocumentPosition(el)&Node.DOCUMENT_POSITION_FOLLOWING){ans=mid;lo=mid+1;}else hi=mid-1;}
+    return ans<0?null:targets[ans];
+  }
+  const cnt=new Map();
+  ordered.forEach(([n,m])=>{const t=targetOf(m);if(t)cnt.set(t.id,(cnt.get(t.id)||0)+1);});
+  function badge(a,n){
+    const b=document.createElement('span');b.className='nb';b.textContent=n;
+    b.setAttribute('role','img');b.setAttribute('aria-label',n===1?'הערה אחת':n+' הערות');
+    a.insertBefore(b,a.firstChild);
+  }
+  toc.querySelectorAll('.tg').forEach(g=>{
+    const t1=g.querySelector('.t1');let total=cnt.get(t1.dataset.t)||0;
+    g.querySelectorAll('.t2').forEach(a=>{const c=cnt.get(a.dataset.t)||0;if(c){badge(a,c);total+=c;}});
+    if(total)badge(t1,total);
+  });
+  const tAll=cnt.get('agreement-top');if(tAll)badge(toc.querySelector('.t1.top'),tAll);
+
+  /* רשימה מתקפלת */
+  const btn=document.getElementById('nl-btn'),body=document.getElementById('nl-body'),chips=document.getElementById('nl-chips');
+  document.getElementById('nl-n').textContent=ordered.length;
+  btn.addEventListener('click',()=>{const o=body.hidden;body.hidden=!o;btn.setAttribute('aria-expanded',String(o));});
+  function goto(n,m){
+    hideTip();jumpTo(m,false);
+    document.querySelectorAll('#doc mark.hl[data-n="'+n+'"]').forEach(x=>{x.classList.remove('flash');void x.offsetWidth;x.classList.add('flash');setTimeout(()=>x.classList.remove('flash'),1900);});
+    closeToc();requestAnimationFrame(spy);
+  }
+  const seen=new Set();
+  ordered.forEach(([n,m])=>{
+    const sec=NOTES[n].sec;if(seen.has(sec))return;seen.add(sec);
+    const b=document.createElement('button');b.type='button';b.textContent=sec;b.title='סעיף '+sec;
+    b.addEventListener('click',()=>goto(n,m));chips.appendChild(b);
+  });
+  function base(){
+    const bar=document.querySelector('.agr-bar');
+    const bh=getComputedStyle(bar).display==='none'?0:bar.offsetHeight;
+    return navEl.offsetHeight+bh;
+  }
+  document.getElementById('nl-next').addEventListener('click',()=>{
+    const b=base()+16;
+    const hit=ordered.find(([n,m])=>m.getBoundingClientRect().top>b)||ordered[0];
+    goto(hit[0],hit[1]);
+  });
+  document.getElementById('nl-prev').addEventListener('click',()=>{
+    const b=base()+8;let hit=null;
+    for(const e of ordered){if(e[1].getBoundingClientRect().top<b)hit=e;else break;}
+    hit=hit||ordered[ordered.length-1];goto(hit[0],hit[1]);
+  });
+})();
 
 
 /* ---- חיפוש בהסכם ---- */
